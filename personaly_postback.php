@@ -23,7 +23,7 @@ $app_id = $_REQUEST['app_id'];
 $signature = $_REQUEST['signature'];
 $offer_name = $_REQUEST['offer_name'];
 // Create validation signature
-$validation_signature = md5($user_id . ':' . $app_hash . ':' . $secret_key);
+$validation_signature = md5($user_id . ':' . $app_hash . ':' . $secret_key); // the app_hash can be found in your app settings
 
 if ($signature != $validation_signature) {
     // Signatures not equal - send error code

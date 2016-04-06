@@ -6,6 +6,7 @@ $secret_key = 'Your secret key';
 $allowed_ips = array(
     '162.243.242.7',
     '162.243.34.227',
+    '52.200.142.249',
 );
 
 // Proceess only requests from Persona.ly IP addresses

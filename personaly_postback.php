@@ -20,7 +20,7 @@ if (!in_array($_SERVER['REMOTE_ADDR'], $allowed_ips)) {
 $user_id = $_REQUEST['user_id'];
 $amount = $_REQUEST['amount'];
 $offer_id = $_REQUEST['offer_id'];
-$app_id = $_REQUEST['app_id'];
+$app_hash = $_REQUEST['app_id'];
 $signature = $_REQUEST['signature'];
 $offer_name = $_REQUEST['offer_name'];
 // Create validation signature
